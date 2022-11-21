@@ -27,14 +27,16 @@ function binToDec ($number){
     <header></header>
 
     <main>
-        <form action="POST">
+        <form action="" method="POST">
             <label for="binary">Enter binary number</label>
             <input type="number" name="binary">
 
             <button>Convert</button>
         </form>
 
+            <?php if (!empty($_POST)): ?>
         <span>Binary to Decimal : <?= binToDec($_POST["binary"]); ?></span>
+        <?php endif; ?>
     </main>
 
     <footer></footer>

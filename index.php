@@ -29,14 +29,19 @@ function binToDec ($number){
     <main>
         <form action="" method="POST">
             <label for="binary">Enter binary number</label>
-            <input type="number" name="binary">
+            <input type="number" name="binary" step="1">
 
             <button>Convert</button>
         </form>
 
-            <?php if (!empty($_POST)): ?>
+            <?php if (!empty($_POST) &&  max(str_split($_POST["binary"])) < 2): ?>
         <span>Binary to Decimal : <?= binToDec($_POST["binary"]); ?></span>
         <?php endif; ?>
+
+        <?php if (!empty($_POST) &&  max(str_split($_POST["binary"])) > 1): ?>
+        <span>It's not a binary number</span>
+        <?php endif; ?>
+
     </main>
 
     <footer></footer>

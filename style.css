@@ -11,6 +11,19 @@ form{
     flex-direction: column;
 }
 
-label , input{
-    margin: 1em;
+
+label, button, input, span {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 5px;
 }

@@ -6,7 +6,7 @@ function binToDec ($number){
     $numberDec = 0; // Initialize result
     
     for ($i = 0; $i < count($reverse_number); $i++){ // Loop for calcul 
-        $numberConvert = $reverse_number[$i] * pow(2,$i); // number[index] * 2^0 , 2^1...2^x
+        $numberConvert = (int)$reverse_number[$i] * pow(2,$i); // number[index] * 2^0 , 2^1...2^x
         $numberDec = $numberDec + $numberConvert; // add numberConvert to numberDec 
     }
     return $numberDec; // return Result of $numberDec
@@ -43,6 +43,7 @@ function binToDec ($number){
         <?php if (!empty($_POST) &&  max(str_split($_POST["binary"])) > 1): ?>
         <span>It's not a binary number</span>
         <?php endif; ?>
+
         </div>
     </main>
 

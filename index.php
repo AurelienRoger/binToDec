@@ -21,12 +21,14 @@ function binToDec ($number){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Binary To Decimal</title>
 </head>
 <body>
     <header></header>
 
     <main>
+        <div class="main-flex">
         <form action="" method="POST">
             <label for="binary">Enter binary number</label>
             <input type="number" name="binary" step="1">
@@ -41,7 +43,7 @@ function binToDec ($number){
         <?php if (!empty($_POST) &&  max(str_split($_POST["binary"])) > 1): ?>
         <span>It's not a binary number</span>
         <?php endif; ?>
-
+        </div>
     </main>
 
     <footer></footer>

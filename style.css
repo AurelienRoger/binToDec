@@ -1,0 +1,16 @@
+.main-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label , input{
+    margin: 1em;
+}

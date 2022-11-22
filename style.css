@@ -20,10 +20,15 @@ label, button, input, span {
 }
 
 input{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     border-radius: 5px;
 }
 
 button{
     border-radius: 5px;
+    margin: 0;
+}
+
+span {
+    margin-top: 1em;
 }
